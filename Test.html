@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>UI RESPONSE</title>
+      <link rel="stylesheet" href="Test.css">
+      <style>
+        table,th,td{
+            border-collapse: collapse;
+            border:1px solid rgb(109, 109, 109);
+        }
+        #aj{
+        height:30px;;
+        width:30px;
+        background-color:rgb(19, 119, 19);
+        border-radius: 100%;
+        margin-bottom: none;
+        margin-top: none;
+            }
+        #div1{
+        width:300px;
+        height:70px;
+        background-color:rgb(255, 255, 255);
+        border:1px solid grey;
+        padding-left: 10px;
+        padding-top: 5px;
+            }
+        #div11{
+        width:300px;
+        height:70px;
+        background-color:rgb(240, 233, 233);
+        border:1px solid grey;
+        padding-left: 10px;
+        padding-top: 5px;
+        }
+        #removebold{
+            font-weight: normal;
+        }
+      </style>
+</head>
+<body>
+    
+    <fieldset style="height: 20px; width:740px; text-align: center; background-color:rgb(240, 233, 233)"> Text</fieldset>
+    <fieldset style="height: 40px; width:740px;"><div id="div1" > 
+        <div id="aj" style="color:azure; text-align:center; font-size:15px; padding-top:10px;margin-left: 300px;">AJ </div> 
+    </div>  </fieldset>
+
+    <table>
+        <tr>
+            <th>
+                <fieldset style="width:300px; height:425px; background-color:azure">
+                <div id="removebold" style=" width:300px; height:40px; background-color:rgb(240, 233, 233);float:left; padding-top: none; margin-top: none;"> <p>Text Inbox</h3></p>    
+                <div id="div1" > 
+                     <div id="aj" style="color:azure; text-align:center; font-size:15px; padding-top:10px">AJ </div> 
+                 </div>
+                <div id="div11" >
+                      <div id="aj" style="color:azure; text-align:center; font-size:15px; padding-top:10px">ZF </div>
+                 </div>
+                <div id="div11" >
+                       <div id="aj" style="color:azure; text-align:center; font-size:15px; padding-top:10px">AJ </div>
+                </div>
+                <div id="div11" >
+                      <div id="aj" style="color:azure; text-align:center; font-size:15px; padding-top:10px">AC </div> </div>
+                <div id="div11" > 
+                     <div id="aj" style="color:azure; text-align:center; font-size:15px; padding-top:10px">BW </div>
+                </div>
+                </fieldset></th>
+            <th>  
+                <fieldset style="width:400px; height:425px; background-color:rgb(255, 255, 255)"> 
+                <div id="removebold" style="width:300px; height:55px; background-color:rgb(240, 233, 233); margin-top: 10px; margin-left: 5px;">
+                    <p style="padding-top: 5px; padding-left: 10px; font-size: 15px;">Hey this is my new Phone number btw <br>
+                        <p style="font-size:10px; margin-left: 250px;">2:05pm</p>
+                    </p>
+                </div>
+                <div id="removebold"style="width:300px; border-left:50px; height:55px;border-radius: 5px; background-color:rgb(240, 233, 233);margin-top: 10px; margin-left: 100px;">
+                    <p style="padding-top: 5px; padding-left: 10px; font-size: 15px;">Thanks For Letting Me know! <br>
+                        <p style="font-size:10px;  margin-left: 250px;">2:08pm</p>
+                    </p>
+                </div>
+                <div id="removebold" style="width:300px; height:94px; border-radius: 5px; background-color:rgb(240, 233, 233);   margin-top: 10px; margin-left: 100px;">
+                    <p style="padding-top: 5px; padding-left: 10px; font-size: 15px;">How was your visit to the community <br> center? Were you able to find some <br> clothing for Jessica?<br>
+                        <p style="font-size:10px;  margin-left: 250px;">2:08pm</p>
+                    </p>
+                </div>
+                <div id="removebold" style="width:300px; height:73px;border-radius: 5px; background-color:rgb(240, 233, 233);   margin-top: 10px; margin-left: 100px;">
+                    <p style="padding-top: 5px; font-size: 15px;">This is a text from CE that could not <br> be sent. <br> 
+                        <p style="font-size:11px;  margin-left: 130px;"><font color="red">Message couldn't be sent.</font><font color="blue"> Try again</font></p>
+                    </p>
+                </div>
+                <div id="removebold" style="width:400px; height:50px;border-radius: 5px; background-color:rgb(255, 226, 246); margin-top: 45px;">
+                    <p style="padding-top: 5px; font-size: 15px;"><b>Text Messaging is not secure or HIPAA complaint.</b> <br>Please remember to not share patient health information. <br> 
+                        <p style="font-size:11px;  margin-left: 130px;">
+                    </p>
+                </div>
+                </fieldset></th>
+        </tr>
+    </table>
+  
+    <br><br><br>
+    Enter number:<input id="value">
+    <button onclick="meth()"> submit</button>
+    <p id="p"></p>
+    <p id="p1"></p>
+    <script>
+        function meth(){    
+        let num=document.getElementById("value").value;
+        let arr=[1,2,3,4,5,6,7,8,9];
+        let newArr=[];
+        for(let a=arr[0];a<arr.length;a++){
+            for(let b=a+1;b<arr.length;b++)
+            {
+                if(a+b==num)
+                { 
+                    newArr.push(a);
+                    newArr.push(b);
+                    document.getElementById("p").innerHTML=newArr;
+                   // document.getElementById("p1").innerHTML=b;
+                }
+            }
+        }
+    }
+    </script>
+
+</body>
+</html>
