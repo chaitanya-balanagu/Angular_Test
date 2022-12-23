@@ -1,0 +1,15 @@
+.active{
+ 
+    background-color: #039be5;
+    border-radius: 10px;
+}
+li,ul{
+    display:flex;
+    justify-content: flex-start;
+    background-color:rgb(230, 197, 197);
+}
+ul,li,a{
+    list-style:none;
+    padding: 10px;
+    text-decoration: none;
+}
